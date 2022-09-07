@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+.fill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: solid 2px #000;
+}
+img{
+    width: 100px;
+}
+.gameFills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    position: relative;
+}
+.one,.seven,.four{
+    border-left: none;
+}
+.one{
+    border-top: none;
+}
+.seven{
+    border-bottom: none;
+}
+.three,.nine,.six{
+    border-right: none;
+}
+.three,.two{
+    border-top: none;
+}
+.nine,.eight{
+    border-bottom: none;
+}
+.game{
+    display: flex;
+    justify-content: center;
+}
+.playerTurn{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.playerOne{
+    color: rgb(248, 16, 16)
+}
+.playerTwo{
+    color: rgb(29, 139, 230);
+}
+.finish{
+    width: 300px;
+    height: 1px;
+    z-index: 1;
+    position: absolute;
+    background-color: #fff; 
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.finishGame{
+    height: 300px;
+    transition-duration: 3s;
+    transition-property: all;
+}
+.border{
+    border: black 2px solid;
+}
+.hide{
+    color: #fff;
+}
+.text{
+    color: #000;
+}
+.first{
+    color: rgb(248, 16, 16)
+}
+.second{
+    color: rgb(29, 139, 230);
+}
